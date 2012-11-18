@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:contentDescription="@string/menu_kahla"
+    android:orientation="horizontal"
+    tools:context=".KahlaActivity" >
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Settingsbutton"
+        android:layout_centerVertical="true"
+        android:text="@string/menu_button_start" 
+        android:onClick="startGame"/>
+
+    <Button
+        android:id="@+id/Settingsbutton"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quitButton"
+        android:layout_below="@+id/startButton"
+        android:layout_marginTop="14dp"
+        android:text="@string/menu_button_settings" 
+        android:onClick="gameSettings"/>
+
+     <Button
+        android:id="@+id/quitButton"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Settingsbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/menu_button_quit" 
+        android:onClick="quitGame"/>
+    
+    <ImageView
+        android:id="@+id/kahlaheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startButton"
+        android:layout_alignRight="@+id/startButton"
+        android:layout_marginBottom="54dp"
+        android:contentDescription="@string/menu_kahla"
+        android:scaleType="center"
+        android:src="@drawable/kahlaheader" />
+</RelativeLayout>
