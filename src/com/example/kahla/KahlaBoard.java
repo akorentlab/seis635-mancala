@@ -37,7 +37,7 @@ public class KahlaBoard
 				playerIndex = getNextPlayerIndex(playerIndex);
 				player = players[playerIndex];
 				int stonesToGive = stonesLeft;
-				stonesLeft = player.takeStones(stonesLeft);
+				stonesLeft = player.takeStones(stonesToGive);
 			}
 		}
 		else if(stonesLeft < 0 && stonesLeft > -6){
