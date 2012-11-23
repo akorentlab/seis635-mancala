@@ -6,5 +6,7 @@
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="menu_kahla">menu_kahla</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_khala_test">KhalaTestActivity</string>
 
 </resources>

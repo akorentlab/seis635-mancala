@@ -59,6 +59,26 @@ public class KahlaBoard
 	return false;
 	}
 	
+	// get array of pits values for specifc player
+	public int[] getPitsCounts(int playerIndex){
+		return players[playerIndex].getPitsAsArray();
+	}
+	
+	// get score of given player
+	public int getScore(int playerIndex){
+		return players[playerIndex].getScore();
+	}
+	
+	// boolean to check if given player has any more stones in pits
+	public boolean hasMoreStones(int playerIndex){
+		return players[playerIndex].hasMoreStones();
+	}
+	
+	// deposite left player's stones to his store
+	public void emptyPits(int playerIndex){
+		players[playerIndex].depositeAllMyStones();
+	}
+	
 	
 	
 }
