@@ -63,8 +63,10 @@ public class Player
 	
 	public int takeStones(int count){
 		int pitIndex = 0;
-		while(pitIndex < 5){
-			Pit pit = getPit(pitIndex);
+		Pit pit;
+		// here we need to check we still have pits left and also (bug fix: we have stones left :) )
+		while(pitIndex < 5 && count > 0 ){
+			pit = getPit(pitIndex);
 			pit.addStone();
 			count--;
 			pitIndex++;
