@@ -8,7 +8,5 @@ public class KahlaController
 {
 	private KahlaGame game;
 	
-	private SoundPlayer soundPlayer;
-	
 	
 }

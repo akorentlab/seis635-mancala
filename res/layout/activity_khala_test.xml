@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KhalaTestActivity" >
+
+    <Button
+        android:id="@+id/player1_pit5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="38dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player1_pit4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/player1_pit5"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player1_pit3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/player1_pit4"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player1_pit2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/player1_pit3"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player1_pit1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/player1_pit2"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player1_pit0"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/player1_pit1"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player2_pit0"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/player1_pit5"
+        android:layout_marginTop="73dp"
+        android:layout_toLeftOf="@+id/player1_pit4"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player2_pit1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player2_pit0"
+        android:layout_alignBottom="@+id/player2_pit0"
+        android:layout_toRightOf="@+id/player2_pit0"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player2_pit2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player2_pit1"
+        android:layout_alignBottom="@+id/player2_pit1"
+        android:layout_toRightOf="@+id/player2_pit1"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player2_pit3"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player2_pit2"
+        android:layout_alignBottom="@+id/player2_pit2"
+        android:layout_toRightOf="@+id/player2_pit2"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player2_pit4"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player2_pit3"
+        android:layout_alignBottom="@+id/player2_pit3"
+        android:layout_toRightOf="@+id/player2_pit3"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/player2_pit5"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player2_pit4"
+        android:layout_alignBottom="@+id/player2_pit4"
+        android:layout_toRightOf="@+id/player2_pit4"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/player1_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/player1_pit5"
+        android:layout_below="@+id/player1_pit5"
+        android:layout_marginTop="28dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/player2_store"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/player1_store"
+        android:layout_alignBottom="@+id/player1_store"
+        android:layout_alignRight="@+id/player2_pit5"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

@@ -6,7 +6,12 @@
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="menu_kahla">menu_kahla</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="kahlaboard">kahlaboard</string>
+    <string name="player1store">player1store</string>
+    <string name="player2store">player2store</string>
+    <string name="player1pit">player1pit</string>
+    <string name="player2pit">player2pit</string>
+    <string name="imgDescription">description</string>
     <string name="title_activity_khala_test">KhalaTestActivity</string>
 
 </resources>

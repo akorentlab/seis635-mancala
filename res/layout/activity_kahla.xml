@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/kahlamenu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
@@ -7,43 +8,158 @@
     android:orientation="horizontal"
     tools:context=".KahlaActivity" >
 
-    <Button
-        android:id="@+id/startButton"
-        android:layout_width="@dimen/menu_button_width"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Settingsbutton"
-        android:layout_centerVertical="true"
-        android:text="@string/menu_button_start" 
-        android:onClick="startGame"/>
-
-    <Button
-        android:id="@+id/Settingsbutton"
-        android:layout_width="@dimen/menu_button_width"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/quitButton"
-        android:layout_below="@+id/startButton"
-        android:layout_marginTop="14dp"
-        android:text="@string/menu_button_settings" 
-        android:onClick="gameSettings"/>
-
-     <Button
-        android:id="@+id/quitButton"
-        android:layout_width="@dimen/menu_button_width"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Settingsbutton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp"
-        android:text="@string/menu_button_quit" 
-        android:onClick="quitGame"/>
-    
     <ImageView
         android:id="@+id/kahlaheader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/startButton"
-        android:layout_alignRight="@+id/startButton"
-        android:layout_marginBottom="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:contentDescription="@string/menu_kahla"
         android:scaleType="center"
         android:src="@drawable/kahlaheader" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kahlaheader"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="37dp"
+        android:layout_toLeftOf="@+id/kahlaheader" >
+        <RadioButton
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setStartingStoneCount"
+            android:layout_marginRight="76dp"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setStartingStoneCount" />
+        <RadioButton
+            android:id="@+id/six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="setStartingStoneCount" />
+    </RadioGroup>
+    
+    
+
+    <ImageView
+        android:id="@+id/six_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/radioGroup1"
+        android:layout_toLeftOf="@+id/radioGroup1"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgDescription"
+        android:maxHeight="45dp"
+        android:maxWidth="45dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/six" />
+
+    <ImageView
+        android:id="@+id/five_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/six_menu"
+        android:layout_toLeftOf="@+id/radioGroup1"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgDescription"
+        android:maxHeight="60dp"
+        android:maxWidth="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/five" />
+
+    <ImageView
+        android:id="@+id/four_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/radioGroup1"
+        android:layout_toLeftOf="@+id/radioGroup1"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgDescription"
+        android:maxHeight="70dp"
+        android:maxWidth="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/four" />
+
+    <ImageView
+        android:id="@+id/startingstones_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/radioGroup1"
+        android:layout_below="@+id/kahlaheader"
+        android:layout_marginRight="36dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgDescription"
+        android:maxHeight="170dp"
+        android:maxWidth="170dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/startingstones" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/quitButton"
+        android:layout_below="@+id/radioGroup1"
+        android:onClick="startGame"
+        android:text="@string/menu_button_start" />
+
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="quitGame"
+        android:text="@string/menu_button_quit" />
+
+    <ImageView
+        android:id="@+id/singeplayer_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/five_menu"
+        android:layout_alignLeft="@+id/kahlaheader"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgDescription"
+        android:maxHeight="150dp"
+        android:maxWidth="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/singleplayer" />
+
+    <Switch
+        android:id="@+id/singleplayer_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="playerToggle"
+        android:layout_alignTop="@+id/singeplayer_menu"
+        android:layout_toRightOf="@+id/singeplayer_menu" />
+
+    <Switch
+        android:id="@+id/music_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/music_menu"
+        android:onClick="musicToggle"
+        android:layout_marginRight="45dp"
+         />
+
+    <ImageView
+        android:id="@+id/music_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/singleplayer_toggle"
+        android:layout_toLeftOf="@+id/music_toggle"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/imgDescription"
+        android:maxHeight="80dp"
+        android:maxWidth="80dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/music" />
+
 </RelativeLayout>
